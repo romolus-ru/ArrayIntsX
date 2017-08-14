@@ -61,6 +61,11 @@ namespace ArrayIntsX
             }
         }
 
+        /// <summary>
+        /// Вспомогательный метод, выводит сумму для рекурсивного метода
+        /// </summary>
+        /// <param name="listRecSum"></param>
+        /// <param name="v"></param>
         private static void ShowValues(List<int> listRecSum, int v)
         {
             Console.WriteLine("" + string.Join("+", listRecSum) + "+" + v.ToString());
@@ -71,8 +76,8 @@ namespace ArrayIntsX
             int[] arr = new int[] { 1, 2, 3 , 5, 8, 46, 34, 32, 8 };
             var s = string.Join(",", arr);
             Console.WriteLine("массив " + s+" из "+arr.Length.ToString()+" элементов");
-            calcSum(arr,9);
-            //calcSumMore(arr, 9);
+            calcSum(arr,9);// двойной цикл
+            //calcSumMore(arr, 9);// рекурсия
             Console.ReadLine();
             
         }
