@@ -22,6 +22,7 @@ namespace ArrayIntsX
             }
         }
 
+        #region рекурсивный поиск суммы по всему массиву
         /// <summary>
         /// Стартовый метод рекурсии
         /// </summary>
@@ -70,6 +71,7 @@ namespace ArrayIntsX
         {
             Console.WriteLine("" + string.Join("+", listRecSum) + "+" + v.ToString());
         }
+        #endregion
 
         static void Main(string[] args)
         {
